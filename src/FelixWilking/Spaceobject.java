@@ -7,7 +7,7 @@ public abstract class Spaceobject {
     private final int size;
     private final String name;
 
-    public Spaceobject(String name, int x, int y, int z, int size) {
+    public Spaceobject(int x, int y, int z, int size) {
         this.name = generatename();
         this.x = x;
         this.y = y;
