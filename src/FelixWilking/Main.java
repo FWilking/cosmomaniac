@@ -7,6 +7,6 @@ public class Main {
         Star newstar = new Star(1, 1, 1, 10, planets);
         Planet newplanet = new Planet(1, 1, 1, 1, newstar);
         planets[1] = newplanet;
-        System.out.print(newplanet.generatename());
+        System.out.print(newplanet.name);
     }
 }

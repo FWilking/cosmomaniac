@@ -5,7 +5,7 @@ public abstract class Spaceobject {
     private final int y;
     private final int z;
     private final int size;
-    private final String name;
+    private String name;
 
     public Spaceobject(int x, int y, int z, int size) {
         this.name = generatename();
@@ -21,10 +21,11 @@ public abstract class Spaceobject {
         int namelength = 1 + (int)(Math.random()*10);
         String name = "";
         for(int i = 0; i < namelength; i++){
-            name += letters.charAt((int)(Math.random()*letters.length()));
-            name += vowels.charAt((int)(Math.random()*letters.length()));
+            System.out.println(Math.random()*letters.length());
+            name += letters.charAt((int) Math.random()*letters.length());
+            name += vowels.charAt((int) Math.random()*letters.length());
         }
-        name += letters.charAt((int)(Math.random()*letters.length()));
+        name += letters.charAt((int)Math.random()*letters.length());
         return name;
     }
 }
