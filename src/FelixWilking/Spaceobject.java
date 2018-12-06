@@ -3,9 +3,14 @@ package FelixWilking;
 public abstract class Spaceobject {
     private final int size;
     private String name;
+    private int x;
+    private int y;
+    private int z;
 
-    public Spaceobject(int size) {
-        System.out.println(generatename());
+    public Spaceobject(int x, int y, int z, int size) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
         this.name = generatename();
         this.size = size;
     }
